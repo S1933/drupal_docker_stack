@@ -13,7 +13,7 @@ Quick Start
 -----------
 1. Clone this repository
 2. Copy .env.example to .env and adjust values as needed
-3. Run: docker-compose up -d
+3. Run: ``docker-compose up -d`
 4. Access the site at: http://localhost
 
 Container Structure
@@ -23,29 +23,31 @@ Container Structure
 - Traefik (Reverse Proxy)
 
 Database Connection
------------------
+```
 Host: postgres
 Port: 5432
 Database: drupal
 Username: drupal
 Password: [see .env file]
+```
+
 
 Common Commands
 -------------
 # Start containers
-docker-compose up -d
+`docker-compose up -d`
 
 # Stop containers
-docker-compose down
+`docker-compose down`
 
 # View logs
-docker-compose logs -f
+`docker-compose logs -f`
 
 # Access Drupal container
-docker exec -it drupal-web-1 sh
+`docker exec -it drupal-web-1 sh`
 
 # Run Drush commands
-docker exec -it drupal-web-1 drush [command]
+`docker exec -it drupal-web-1 drush [command]`
 
 Development Notes
 ---------------
